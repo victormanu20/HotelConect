@@ -1,0 +1,64 @@
+<form [formGroup]="form" class="search-wrapper" [ngClass]="'variant-'+variant">
+
+    <div [fxLayout]="(vertical) ? 'column' : 'row wrap'"> 
+
+        <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2">
+            <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                <mat-label>Seleccionar Ciudad</mat-label> 
+                <mat-select placeholder="Seleccionar ciudad" formControlName="city">
+                    <mat-option *ngFor="let city of cities" [value]="city">
+                        {{city.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2">
+            <mat-form-field >
+                <mat-label>Selecciona el rango de fecha</mat-label>
+                <mat-date-range-input formGroupName="range" [rangePicker]="picker">
+                  <input matStartDate formControlName="start" placeholder="Fecha inicial">
+                  <input matEndDate formControlName="end" placeholder="Fecha final">
+                </mat-date-range-input>
+                <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              
+                <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
+                <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error>
+              </mat-form-field>              
+        </div>        
+
+        <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2" >
+
+            <mat-label>Numero de habitaciones</mat-label>
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100">
+                    <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                        <mat-label>Adultos</mat-label>
+                        <input matInput autocomplete="off" placeholder="Num adultos" formControlName="numAdults" type="text" onlyNumber>                  
+                    </mat-form-field>
+                </div>
+                <!-- <div fxFlex="10" class="text-center" [class.pt-2]="variant == 2">
+                    <mat-icon class="text-muted">remove</mat-icon>
+                </div> -->
+                <!-- <div fxFlex="45">
+                    <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                        <mat-label>niños</mat-label>
+                        <input matInput autocomplete="off" placeholder="Num niños" formControlName="numKids" type="text" onlyNumber>                  
+                    </mat-form-field>
+                </div> -->
+            </div> 
+
+        </div>          
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center" class="p-2">       
+        <button mat-raised-button color="warn" class="uppercase mx-1" (click)="reset()">{{ 'BTN.CLEAR' | translate }}</button>
+        <button *ngIf="!vertical" mat-raised-button color="primary" class="uppercase mx-1" (click)="search()">
+            Buscar
+        </button>      
+      <!-- <button *ngIf="searchOnBtnClick" mat-raised-button color="primary" class="search-btn mx-1" (click)="search()"><mat-icon>search</mat-icon> Search</button> -->
+    </div>
+    
+
+</form>
