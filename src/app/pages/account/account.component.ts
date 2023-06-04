@@ -16,9 +16,9 @@ export class AccountComponent implements OnInit {
   public userData:any;
   public links = [
     { name: 'PROFILE', href: 'profile', icon: 'person' },
-    { name: 'MY_HOTELS', href: 'my-properties', icon: 'view_list' },
-    { name: 'MY_RESERVATIONS', href: 'favorites', icon: 'favorite' },
-    { name: 'REGISTER_HOTEL', href: '/submit-property', icon: 'add_circle' },
+    { name: 'MY_HOTELS', href: 'my-hotels', icon: 'view_list' },
+    { name: 'MY_RESERVATIONS', href: 'reserve', icon: 'favorite' },
+    { name: 'REGISTER_HOTEL', href: '/create-hotel', icon: 'add_circle' },
     { name: 'LOGOUT', href: '/login', icon: 'power_settings_new' }
   ]; 
   constructor(public router:Router) { }
