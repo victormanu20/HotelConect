@@ -38,3 +38,9 @@ reserva para ingresar los datos de los huéspedes.
 
 2. El sistema permite realizar la reserva de la
 habitación.
+
+### Ejecutar proyecto local
+Clonar el repositorio en su maquina y ejecutar los siguientes comandos:
+
+1. npm install --force
+2. ng serve
