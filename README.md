@@ -1,5 +1,5 @@
 # HOTELCONECT
-
+* link de prueba: https://test-hotelconect.web.app/
 Es una platforma para la reserva de hoteles y administracion de los mismos.
 
 Cumple con los siguientes requerimientos:
