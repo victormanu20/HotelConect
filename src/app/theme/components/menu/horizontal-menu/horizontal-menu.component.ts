@@ -14,8 +14,14 @@ export class HorizontalMenuComponent implements OnInit {
   constructor(public menuService:MenuService) { }
 
   ngOnInit() {
+    // this.menuItems = this.menuService.getHorizontalMenuItems();
+    const userData = JSON.parse(localStorage.getItem('userData'))
     this.menuItems = this.menuService.getHorizontalMenuItems();
     this.menuItems = this.menuItems.filter(item => item.parentId == this.menuParentId); 
-  }
+
+    if(userData){
+      this.menuItems=this.menuItems.filter(item=> item.title !='LOGIN')
+    }
+    }
 
 }

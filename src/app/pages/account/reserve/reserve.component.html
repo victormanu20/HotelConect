@@ -1,0 +1,44 @@
+<mat-form-field appearance="outline" class="w-100">
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter properties" autocomplete="off">
+</mat-form-field> 
+<div class="table-wrapper"> 
+    <table mat-table [dataSource]="dataSource" matSort class="w-100">
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+        <td mat-cell *matCellDef="let reserve"> {{reserve.id}} </td>
+      </ng-container>  
+
+      <!-- Image Column -->
+      <ng-container matColumnDef="reservation_date">
+        <th mat-header-cell *matHeaderCellDef> Fecha de reserva </th>
+        <td mat-cell *matCellDef="let reserve">{{reserve.booking_date}}</td>
+      </ng-container> 
+  
+      <!-- Title Column -->
+      <ng-container matColumnDef="name_person">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> nombre Persona R. </th>
+        <td mat-cell *matCellDef="let reserve">{{reserve.reserve_person.full_name}}</td>
+      </ng-container>  
+            <!-- Title Column -->
+            <ng-container matColumnDef="name_hotel">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> nombre hotel. </th>
+              <td mat-cell *matCellDef="let reserve">{{reserve.id_hotel.title}}</td>
+            </ng-container> 
+
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Acciones </th>
+        <td mat-cell *matCellDef="let reserve"> 
+          <button mat-stroked-button color="primary" mat-button (click)="openDialog(reserve)">Ver detalles</button>
+        </td>
+      </ng-container> 
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let property; columns: displayedColumns;">
+      </tr>
+    </table> 
+    <p *ngIf="dataSource?.data.length === 0" class="py-5 mb-0 text-center">No data available</p> 
+</div>
+<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>

@@ -7,7 +7,7 @@ import { AgmCoreModule } from '@agm/core';
 import { AccountComponent } from './account.component';
 import { DashboardComponent } from './dashboard/dashboard.component'; 
 import { MyPropertiesComponent } from './my-properties/my-properties.component';
-import { FavoritesComponent } from './favorites/favorites.component';
+import { reserveComponent } from './reserve/reserve.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EditPropertyComponent } from './edit-property/edit-property.component';
 
@@ -16,9 +16,9 @@ export const routes: Routes = [
     path: '', 
     component: AccountComponent, children: [
       { path: '', redirectTo: 'profile', pathMatch: 'full' }, 
-      { path: 'my-properties', component: MyPropertiesComponent },
-      { path: 'my-properties/:id', component: EditPropertyComponent },
-      { path: 'favorites', component: FavoritesComponent },
+      { path: 'my-hotels', component: MyPropertiesComponent },
+      { path: 'my-hotels/:id', component: EditPropertyComponent },
+      { path: 'reserve', component:  reserveComponent},
       { path: 'profile', component: ProfileComponent }
     ]
   }
@@ -29,7 +29,7 @@ export const routes: Routes = [
     DashboardComponent,
     AccountComponent,  
     MyPropertiesComponent, 
-    FavoritesComponent, 
+    reserveComponent, 
     ProfileComponent, 
     EditPropertyComponent
   ],

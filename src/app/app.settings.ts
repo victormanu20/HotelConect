@@ -30,11 +30,11 @@ export class Settings {
 @Injectable()
 export class AppSettings {
     public settings = new Settings(
-        'HouseKey',  // theme name
-        'red',      // blue, green, red, pink, purple, grey, orange-dark
+        'HotelConect',  // theme name
+        'blue',      // blue, green, red, pink, purple, grey, orange-dark
         1,           // 1 or 2
         true,        // true = sticky, false = not sticky
-        'image',     // default, image, carousel, map, video
+        'map',     // default, image, carousel, map, video
         false,       // true = rtl, false = ltr
         1,           //  1, 2  or 3
         false,       //  true = search on button click

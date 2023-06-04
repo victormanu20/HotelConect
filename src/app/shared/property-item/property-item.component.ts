@@ -82,7 +82,7 @@ export class PropertyItemComponent implements OnInit {
     const fecha2 = end;
     
     const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
-    this.stateTransaction.dayStay = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24));
+    this.stateTransaction.dayStay = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24))+1;
     this.stateTransaction.priceTotalSimple= (this.property.singleRoomPrice *  this.stateTransaction.dayStay) * this.searchFields.numAdults;
     this.stateTransaction.priceTotalDuo= (this.property.doubleRoomPrice *  this.stateTransaction.dayStay) * Math.ceil(this.searchFields.numAdults/2);
 
@@ -151,17 +151,13 @@ export class PropertyItemComponent implements OnInit {
   }
   
 
-  public addToCompare(){
-    this.appService.addToCompare(this.property, CompareOverviewComponent, (this.settings.rtl) ? 'rtl':'ltr'); 
-  }
+
 
   public onCompare(){
     return this.appService.Data.compareList.filter(item=>item.id == this.property.id)[0];
   }
 
-  public addToFavorites(){
-    this.appService.addToFavorites(this.property, (this.settings.rtl) ? 'rtl':'ltr');
-  }
+
 
   public onFavorites(){
     return this.appService.Data.favorites.filter(item=>item.id == this.property.id)[0];

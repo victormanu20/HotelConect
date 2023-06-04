@@ -34,7 +34,7 @@ export class EditPropertyComponent implements OnInit {
 
   ngOnInit() {
     this.features = this.appService.getFeatures();
-    this.propertyTypes = this.appService.getPropertyTypes();
+    this.propertyTypes = this.appService.hotelsTypes();
     this.propertyStatuses = this.appService.getPropertyStatuses();
     this.cities = this.appService.getCities();
     this.neighborhoods = this.appService.getNeighborhoods();

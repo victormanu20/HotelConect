@@ -1,0 +1,9 @@
+.card__containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-template-rows: auto;
+
+    .item__title{
+        font-weight: bold;
+    }
+}

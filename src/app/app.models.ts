@@ -30,6 +30,30 @@ export class Property {
                 public views: number){ }
 } 
 
+export interface Person {
+    full_name: string;
+    date_birth: string;
+    gender: string;
+    type_document: string;
+    num_document: string;
+    email: string;
+    phone: string;
+    full_name_emergency?: string;
+    phone_emergency?: string;
+}
+
+export interface Reservation {
+    id: number;
+    booking_date: string;
+    start_date: string;
+    end_date: string;
+    total_price: string;
+    number_persons: number;
+    number_rooms: number;
+    id_hotel: Property;
+    persons_reservation: Person[];
+    reserve_person: Person;
+}
 
 export class Area {
     constructor(public id: number, 

@@ -18,7 +18,6 @@ export class NotFoundComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    document.getElementById('preloader').classList.add('hide');    
   }
 
 }

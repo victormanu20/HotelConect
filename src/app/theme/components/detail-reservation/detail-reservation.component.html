@@ -1,0 +1,170 @@
+<h2 mat-dialog-title fxLayout="row" fxLayoutAlign="space-between center" >
+    <span>Detalle de la reserva</span>
+    <button mat-button mat-dialog-close>Cerrar</button>
+</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="px-3">     
+        <div class="theme-container"> 
+        
+            <mat-sidenav-container class="single-property mt-3">
+                <mat-sidenav-content ngClass.gt-sm="distance">
+                    <mat-card fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center">             
+                        <div>
+                            <h2 class="uppercase" ngClass.xs="text-center">{{reserve.id_hotel.title}}</h2>
+                            <p fxLayout="row" fxLayoutAlign.xs="center" class="address mb-0">
+                                <mat-icon class="text-muted">location_on</mat-icon>
+                                <span>{{reserve.id_hotel?.formattedAddress}}</span>
+                            </p>
+                        </div>
+                        <div fxLayout="column" fxLayoutAlign.xs="center center" class="mx-3">                      
+                            <h2 class="primary-color price">
+                                <span *ngIf="reserve.total_price">{{reserve.total_price | currencyCOP}}</span>
+                            </h2>
+            
+                            <!-- <app-rating [ratingsCount]="property?.ratingsCount" [ratingsValue]="property?.ratingsValue"></app-rating>  -->
+    
+                        </div>
+                        <button *ngIf="!sidenavOpen" mat-icon-button (click)="sidenav.toggle()">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>                                  
+                    </mat-card>
+    
+                    
+                    
+                    <mat-card *ngIf="reserve.id_hotel" class="mt-3">
+                        <mat-card-header fxLayoutAlign="center center"> 
+                            <mat-card-title class="uppercase">Details</mat-card-title> 
+                        </mat-card-header>
+                        <div fxLayout="row wrap" class="details">
+                            <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
+                                <span>Property Type:</span>
+                                <span>{{reserve.id_hotel.propertyType}}</span>
+                            </div> 
+                            <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
+                                <span>City:</span>
+                                <span>{{reserve.id_hotel.city}}</span>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
+                                <span>Numero personas:</span>
+                                <span>{{reserve.number_persons}}</span>
+                            </div>
+                            <div fxFlex="100" fxFlex.gt-xs="50" fxLayout="row" class="item">
+                                <span>Numero cuartos reservados:</span>
+                                <span>{{reserve.number_rooms}}</span>
+                            </div>
+                        </div>   
+                    </mat-card>
+                    <mat-card *ngIf="reserve.id_hotel" class="mt-3">
+                        <mat-card-header fxLayoutAlign="center center"> 
+                            <mat-card-title class="uppercase">Detalles de personas</mat-card-title> 
+                        </mat-card-header>
+                        <div class="card__containers">
+                            <div *ngFor="let person of reserve.persons_reservation;index as i;">
+                                <h2 class="primary-color">reserva persona: {{i+1}}</h2>
+                                <p>
+                                    <span class="item__title">Nombre Completo: </span>
+                                    <span>{{person.full_name}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">fecha nacimiento: </span>
+                                    <span>{{person.date_birth}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Genero: </span>
+                                    <span>{{person.gender}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Numero documento: </span>
+                                    <span>{{person.num_document}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Correo: </span>
+                                    <span>{{person.email}}</span>
+                                </p>
+                                <h3 class="primary-color">Contacto emergencia</h3>
+                                <p>
+                                    <span class="item__title">Nombre completo: </span>
+                                    <span>{{person.full_name_emergency}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Telefono: </span>
+                                    <span>{{person.phone_emergency}}</span>
+                                </p>
+                            </div>
+                        </div>   
+                    </mat-card>
+                    <mat-card *ngIf="reserve.id_hotel" class="mt-3">
+                        <mat-card-header fxLayoutAlign="center center"> 
+                            <mat-card-title class="uppercase">Contacto de Reserva</mat-card-title> 
+                        </mat-card-header>
+                        <div class="card__containers">
+                            <div>
+                                <p>
+                                    <span class="item__title">Nombre Completo: </span>
+                                    <span>{{reserve.reserve_person.full_name}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">fecha nacimiento: </span>
+                                    <span>{{reserve.reserve_person.date_birth}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Genero: </span>
+                                    <span>{{reserve.reserve_person.gender}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Numero documento: </span>
+                                    <span>{{reserve.reserve_person.num_document}}</span>
+                                </p>
+                                <p>
+                                    <span class="item__title">Correo: </span>
+                                    <span>{{reserve.reserve_person.email}}</span>
+                                </p>
+
+                            </div>
+                        </div>   
+                    </mat-card>
+    
+                    <mat-card class="mt-3"> 
+                        <mat-card-header fxLayoutAlign="center center"> 
+                            <mat-card-title class="uppercase">Features</mat-card-title> 
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div fxLayout="row wrap">
+                                <div *ngFor="let feature of reserve.id_hotel?.features" fxFlex="100" fxFlex.gt-xs="33.3">
+                                    <mat-icon class="mat-icon-sm" color="primary">check</mat-icon>
+                                    <span class="mx-2">{{feature}}</span>
+                                </div>
+                            </div>
+                        </mat-card-content>
+                    </mat-card>
+    
+    
+
+    
+                    <mat-card class="mt-3"> 
+                        <mat-card-header fxLayoutAlign="center center"> 
+                            <mat-card-title class="uppercase">Location</mat-card-title> 
+                        </mat-card-header>
+                        <mat-card-content>
+                            <agm-map [latitude]="reserve.id_hotel?.location.lat" [longitude]="reserve.id_hotel?.location.lng" [mapTypeControl]="true" [fullscreenControl]="true">
+                                <agm-marker [latitude]="reserve.id_hotel?.location.lat" [longitude]="reserve.id_hotel?.location.lng" [markerDraggable]="false"></agm-marker>
+                            </agm-map>
+                        </mat-card-content>                   
+                    </mat-card>
+    
+                </mat-sidenav-content>
+            </mat-sidenav-container>
+    
+        </div>
+    </div>
+     
+    <!-- <div class="section mt-3">
+        <div class="px-3">
+            <div class="theme-container"> 
+                <h1 class="section-title">Related properties</h1>            
+                <app-properties-carousel [properties]="relatedProperties"></app-properties-carousel>                        
+            </div>
+        </div>   
+    </div>  -->
+    
+</mat-dialog-content>

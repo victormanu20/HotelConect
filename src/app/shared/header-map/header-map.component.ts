@@ -283,7 +283,6 @@ export class HeaderMapComponent implements OnInit {
   ngOnInit(): void {
     if(this.contentOffsetToTop){
       setTimeout(() => {
-        this.settings.contentOffsetToTop = this.contentOffsetToTop;
       }); 
     } 
   }
@@ -304,9 +303,7 @@ export class HeaderMapComponent implements OnInit {
   }
 
   ngOnDestroy(){  
-    setTimeout(() => {
-      this.settings.contentOffsetToTop = false;
-    });  
+ 
   }
 
   onMapReady(e:any) { 

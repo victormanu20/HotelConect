@@ -4,8 +4,8 @@
 
         <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2">
             <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
-                <mat-label>Seleccionar Ciudad</mat-label> 
-                <mat-select placeholder="Seleccionar ciudad" formControlName="city">
+                <mat-label>{{'TEXT_INPUT.SELECT_CITY' | translate}}</mat-label> 
+                <mat-select [placeholder]="'TEXT_INPUT.SELECT_CITY' | translate" formControlName="city">
                     <mat-option *ngFor="let city of cities" [value]="city">
                         {{city.name}}
                     </mat-option>
@@ -14,29 +14,31 @@
         </div>
 
         <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2">
-            <mat-form-field >
-                <mat-label>Selecciona el rango de fecha</mat-label>
-                <mat-date-range-input formGroupName="range" [rangePicker]="picker">
-                  <input matStartDate formControlName="start" placeholder="Fecha inicial">
-                  <input matEndDate formControlName="end" placeholder="Fecha final">
-                </mat-date-range-input>
+            <mat-form-field formGroupName="range"  >
+                <div fxFlex="row">
+                    <mat-label >{{"TEXT_INPUT.SELECT_RANGE_DATE" | translate}}</mat-label>
+                    <mat-date-range-input [rangePicker]="picker" class="my-2">
+                      <input matStartDate formControlName="start" [placeholder]="'TEXT_INPUT.DATE_START' | translate">
+                      <input matEndDate formControlName="end" [placeholder]="'TEXT_INPUT.DATE_END' | translate">
+                    </mat-date-range-input>
+                </div>
                 <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
                 <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
                 <mat-date-range-picker #picker></mat-date-range-picker>
-              
-                <mat-error *ngIf="range.controls.start.hasError('matStartDateInvalid')">Invalid start date</mat-error>
-                <mat-error *ngIf="range.controls.end.hasError('matEndDateInvalid')">Invalid end date</mat-error>
+                
+                <mat-error *ngIf="form.get('range.start').hasError('matStartDateInvalid')">Invalid start date</mat-error>
+                <mat-error *ngIf="form.get('range.end').hasError('matEndDateInvalid')">Invalid end date</mat-error>
               </mat-form-field>              
         </div>        
 
         <div fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2" >
 
-            <mat-label>Numero de habitaciones</mat-label>
+            <mat-label>{{'TEXT_INPUT.NUMBER_ROOMS' | translate}}</mat-label>
             <div fxLayout="row wrap" fxLayoutAlign="space-between center">
                 <div fxFlex="100">
                     <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
-                        <mat-label>Adultos</mat-label>
-                        <input matInput autocomplete="off" placeholder="Num adultos" formControlName="numAdults" type="text" onlyNumber>                  
+                        <mat-label>{{'TEXT_INPUT.NUMBER_ROOMS' | translate}}</mat-label>
+                        <input matInput autocomplete="off" placeholder="" formControlName="numAdults" type="text" onlyNumber>                  
                     </mat-form-field>
                 </div>
                 <!-- <div fxFlex="10" class="text-center" [class.pt-2]="variant == 2">
@@ -53,9 +55,10 @@
         </div>          
     </div>
     <div fxLayout="row" fxLayoutAlign="center center" class="p-2">       
-        <button mat-raised-button color="warn" class="uppercase mx-1" (click)="reset()">{{ 'BTN.CLEAR' | translate }}</button>
+        <button mat-raised-button color="warn" class="uppercase mx-1" (click)="reset()">
+            {{ 'BTN.CLEAR' | translate }}</button>
         <button *ngIf="!vertical" mat-raised-button color="primary" class="uppercase mx-1" (click)="search()">
-            Buscar
+            {{"BTN.SEARCH" | translate}}
         </button>      
       <!-- <button *ngIf="searchOnBtnClick" mat-raised-button color="primary" class="search-btn mx-1" (click)="search()"><mat-icon>search</mat-icon> Search</button> -->
     </div>

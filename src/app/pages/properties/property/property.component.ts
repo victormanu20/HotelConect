@@ -176,17 +176,12 @@ export class PropertyComponent implements OnInit {
     });     
   }
 
-  public addToCompare(){
-    this.appService.addToCompare(this.property, CompareOverviewComponent, (this.settings.rtl) ? 'rtl':'ltr'); 
-  }
+
 
   public onCompare(){
     return this.appService.Data.compareList.filter(item=>item.id == this.property.id)[0];
   }
 
-  public addToFavorites(){
-    this.appService.addToFavorites(this.property, (this.settings.rtl) ? 'rtl':'ltr');
-  }
 
   public onFavorites(){
     return this.appService.Data.favorites.filter(item=>item.id == this.property.id)[0];

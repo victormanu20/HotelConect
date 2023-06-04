@@ -13,12 +13,13 @@ export class AccountComponent implements OnInit {
   };
   @ViewChild('sidenav') sidenav: any;
   public sidenavOpen:boolean = true;
-  public links = [ 
-    { name: 'Profile', href: 'profile', icon: 'person' },  
-    { name: 'My Properties', href: 'my-properties', icon: 'view_list' },
-    { name: 'Favorites', href: 'favorites', icon: 'favorite' }, 
-    { name: 'Submit Property', href: '/submit-property', icon: 'add_circle' },  
-    { name: 'Logout', href: '/login', icon: 'power_settings_new' },    
+  public userData:any;
+  public links = [
+    { name: 'PROFILE', href: 'profile', icon: 'person' },
+    { name: 'MY_HOTELS', href: 'my-properties', icon: 'view_list' },
+    { name: 'MY_RESERVATIONS', href: 'favorites', icon: 'favorite' },
+    { name: 'REGISTER_HOTEL', href: '/submit-property', icon: 'add_circle' },
+    { name: 'LOGOUT', href: '/login', icon: 'power_settings_new' }
   ]; 
   constructor(public router:Router) { }
 
@@ -26,6 +27,7 @@ export class AccountComponent implements OnInit {
     if(window.innerWidth < 960){
       this.sidenavOpen = false;
     };
+    this.userData = JSON.parse(localStorage.getItem('userData'))
   }
 
   @HostListener('window:resize')

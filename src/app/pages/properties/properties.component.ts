@@ -63,92 +63,11 @@ export class PropertiesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getProperties();
   }
 
   ngOnDestroy(){ 
     this.watcher.unsubscribe();
   }
 
-  public getProperties(){   
-    this.appService.getProperties().subscribe(data => { 
-      let result = this.filterData(data); 
-      if(result.data.length == 0){
-        this.properties.length = 0;
-        this.pagination = new Pagination(1, this.count, null, 2, 0, 0);  
-        this.message = 'No Results Found';
-        return false;
-      } 
-      this.properties = result.data; 
-      this.pagination = result.pagination;
-      this.message = null;
-    })
-  }
-
-  public resetPagination(){ 
-    if(this.paginator){
-      this.paginator.pageIndex = 0;
-    }
-    this.pagination = new Pagination(1, this.count, null, null, this.pagination.total, this.pagination.totalPages);
-  }
-
-  public filterData(data){
-    return this.appService.filterData(data, this.searchFields, this.sort, this.pagination.page, this.pagination.perPage);
-  }
-
-  public searchClicked(){ 
-    this.properties.length = 0;
-    this.getProperties(); 
-    if (isPlatformBrowser(this.platformId)) {
-      window.scrollTo(0,0);
-    }  
-  }
-  public searchChanged(event){
-    event.valueChanges.subscribe(() => {   
-      this.resetPagination(); 
-      this.searchFields = event.value;
-      setTimeout(() => {      
-        this.removedSearchField = null;
-      });
-      if(!this.settings.searchOnBtnClick){     
-        this.properties.length = 0;  
-      }            
-    }); 
-    event.valueChanges.pipe(debounceTime(500), distinctUntilChanged()).subscribe(() => { 
-      if(!this.settings.searchOnBtnClick){     
-        this.getProperties(); 
-      }
-    });       
-  } 
-  public removeSearchField(field){ 
-    this.message = null;   
-    this.removedSearchField = field; 
-  } 
-
-
-  public changeCount(count){
-    this.count = count;   
-    this.properties.length = 0;
-    this.resetPagination();
-    this.getProperties();
-  }
-  public changeSorting(sort){    
-    this.sort = sort; 
-    this.properties.length = 0;
-    this.getProperties();
-  }
-  public changeViewType(obj){ 
-    this.viewType = obj.viewType;
-    this.viewCol = obj.viewCol; 
-  } 
-
-
-  public onPageChange(e){ 
-    this.pagination.page = e.pageIndex + 1;
-    this.getProperties();
-    if (isPlatformBrowser(this.platformId)) {
-      window.scrollTo(0,0);
-    } 
-  }
 
 }

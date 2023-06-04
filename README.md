@@ -1,27 +1,40 @@
-# housekey
+# HOTELCONECT
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+Es una platforma para la reserva de hoteles y administracion de los mismos.
 
-## Development server
+Cumple con los siguientes requerimientos:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Tiene roles usuario y adminstrador
 
-## Code scaffolding
+### Role Adminsitador
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* user: admin
+* clave : admin123
 
-## Build
+1. El sistema  permite crear un nuevo hotel.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. El sistema permitie asignar al hotel cada una
+de las habitaciones disponibles para reserva.
 
-## Running unit tests
+3. El sistema permite modificar los valores de de
+cada habitación.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. El sistema permite modificar los datos de cada
+hotel.
 
-## Running end-to-end tests
+5. El sistema permite habilitar o deshabilitar
+cada uno de los hoteles.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+6. El sistema permite habilitar o deshabilitar.
+cada una de las habitaciones del hotel.
 
-## Further help
+### Role usuario
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* user : user
+* clave : user123
+
+1. El sistema permite desplegar un formulario de
+reserva para ingresar los datos de los huéspedes.
+
+2. El sistema permite realizar la reserva de la
+habitación.

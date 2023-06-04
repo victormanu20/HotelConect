@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { Property, Location } from './app.models';
+import { Property, Location,Reservation } from './app.models';
 import { AppSettings } from './app.settings';
 import { isPlatformBrowser,DatePipe } from '@angular/common';
 import { environment } from 'src/environments/environment';
@@ -33,7 +33,7 @@ export class AppService {
   )
  
   public url = environment.url + '/assets/data/'; 
-  public apiKey = 'AIzaSyAO7Mg2Cs1qzo_3jkKkZAKY6jtwIlm41-I';
+  public apiKey = 'AIzaSyB-e9MP04V0fVjgSBRr3HMxhK7exGOc1qM';
   
   constructor(public http:HttpClient, 
               private bottomSheet: MatBottomSheet, 
@@ -48,8 +48,15 @@ export class AppService {
     return this.http.get<Property[]>(this.url + 'properties.json');
   }
 
+  public getReservations(): Observable<Reservation[]>{
+    return this.http.get<Reservation[]>(this.url+"reservations.json")
+  }
   public getPropertyById(id): Observable<Property>{
     return this.http.get<Property>(this.url + 'property-' + id + '.json');
+  }
+
+  public getReservationsById(id): Observable<Reservation>{
+    return this.http.get<Reservation>(this.url + 'reservations-' + id + '.json');
   }
 
   public getFeaturedProperties(): Observable<Property[]>{
@@ -133,11 +140,39 @@ export class AppService {
     return value; 
   }
 
-  public getPropertyTypes(){
+  public getUsers(){
+    return [
+      {
+        username:'admin',
+        name:"Victor Astudillo",
+        role:"admin",
+        password:'admin123'
+      },
+      {
+        username:'user',
+        name:"usuario test",
+        role:"user",
+        password:'user123'
+      }
+
+    ]
+  }
+
+  public hotelsTypes(){
     return [ 
-      { id: 1, name: 'Office' },
-      { id: 2, name: 'House' },
-      { id: 3, name: 'Apartment' }
+      { id: 1, name: 'Hotel' },
+      { id: 2, name: 'Apartmento' },
+      { id: 3, name: 'Casa' }
+    ]
+  }
+  public categoriesHotel(){
+    return [ 
+      { id: 1, name: '1 Estrella' },
+      { id: 2, name: '2 Estrella' },
+      { id: 3, name: '3 Estrella' },
+      { id: 4, name: '4 Estrella' },
+      { id: 5, name: '5 Estrella' }
+
     ]
   }
 
@@ -228,6 +263,21 @@ export class AppService {
       { id: 9, name: 'Fireplace', selected: false },
       { id: 10, name: 'Swimming Pool', selected: false },
       { id: 11, name: 'Gym', selected: false },
+    ]
+  }
+
+  public getGender(){
+    return [
+      { id: 1, name: 'Hombre' },
+      { id: 2, name: 'Mujer' },
+      { id: 3, name: 'Otro' }
+    ]
+  }
+  public getOptionsDocument(){
+    return [
+      { id: 1, name: 'C. Ciudadania' },
+      { id: 2, name: 'T. indentidad' },
+      { id: 3, name: 'Otro' }
     ]
   }
 

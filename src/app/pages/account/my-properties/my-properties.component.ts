@@ -11,7 +11,7 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./my-properties.component.scss']
 })
 export class MyPropertiesComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'image', 'title', 'published', 'views', 'actions' ];
+  displayedColumns: string[] = ['id', 'image', 'title', 'published', 'views',"reservations", 'actions' ];
   dataSource: MatTableDataSource<Property>;
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
   @ViewChild(MatSort, {static: true}) sort: MatSort;

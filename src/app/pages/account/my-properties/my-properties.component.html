@@ -1,5 +1,5 @@
 <mat-form-field appearance="outline" class="w-100">
-  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter properties" autocomplete="off">
+  <input matInput (keyup)="applyFilter($event.target.value)" [placeholder]="'TEXT_INPUT.FILTER_PROPERTIES' | translate" autocomplete="off">
 </mat-form-field>
 <div class="table-wrapper"> 
     <table mat-table [dataSource]="dataSource" matSort class="w-100">
@@ -12,36 +12,42 @@
 
       <!-- Image Column -->
       <ng-container matColumnDef="image">
-        <th mat-header-cell *matHeaderCellDef> Image </th>
+        <th mat-header-cell *matHeaderCellDef> {{"TEXT_INPUT.IMAGE" | translate}} </th>
         <td mat-cell *matCellDef="let property"><img [src]="property.gallery[0].small" [style.width.px]="100" class="d-block"></td>
       </ng-container> 
   
       <!-- Title Column -->
       <ng-container matColumnDef="title">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{"TEXT_INPUT.NAME" | translate}} </th>
         <td mat-cell *matCellDef="let property"><a [routerLink]="['/properties', property.id ]" class="property-name">{{property.title}}</a></td>
       </ng-container> 
 
       <!-- Published Column -->
       <ng-container matColumnDef="published">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Published </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>{{"TEXT_INPUT.PUBLISHED" | translate}} </th>
         <td mat-cell *matCellDef="let property"> {{property.published | date:"dd MMMM, yyyy"}} </td>
       </ng-container> 
 
       <!-- Views Column -->
       <ng-container matColumnDef="views">
-        <th mat-header-cell *matHeaderCellDef mat-sort-header> Views </th>
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{"TEXT_INPUT.VIEWS" | translate}}  </th>
+        <td mat-cell *matCellDef="let property"> {{property.views}} </td>
+      </ng-container> 
+
+      <!-- Views Column -->
+      <ng-container matColumnDef="reservations">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{"TEXT_INPUT.RESERVATIONS" | translate}}  </th>
         <td mat-cell *matCellDef="let property"> {{property.views}} </td>
       </ng-container> 
 
       <!-- Actions Column -->
       <ng-container matColumnDef="actions">
-        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <th mat-header-cell *matHeaderCellDef> {{"TEXT_INPUT.ACTIONS" | translate}}  </th>
         <td mat-cell *matCellDef="let property">  
-            <a [routerLink]="['/account/my-properties', property.id]"mat-icon-button color="primary" matTooltip="Edit property">
+            <a [routerLink]="['/account/my-hotels', property.id]"mat-icon-button color="primary" [matTooltip]="'EDIT_PROFILE' | translate">
                 <mat-icon>edit</mat-icon>
             </a>
-            <button mat-icon-button color="warn" (click)="remove(property)" matTooltip="Remove" class="remove">
+            <button mat-icon-button color="warn" (click)="remove(property)" [matTooltip]="'REMOVE'| translate" class="remove">
                 <mat-icon>delete</mat-icon>
             </button> 
         </td>

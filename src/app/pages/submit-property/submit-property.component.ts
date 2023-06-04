@@ -15,8 +15,8 @@ export class SubmitPropertyComponent implements OnInit {
   @ViewChild('addressAutocomplete') addressAutocomplete: ElementRef;
   public submitForm:UntypedFormGroup; 
   public features = [];
-  public propertyTypes = [];
-  public propertyStatuses = [];
+  public hotelsTypes = [];
+  public categoriesHotel = [];
   public cities = [];
   public neighborhoods = [];
   public streets = [];
@@ -31,8 +31,8 @@ export class SubmitPropertyComponent implements OnInit {
 
   ngOnInit() {
     this.features = this.appService.getFeatures();  
-    this.propertyTypes = this.appService.getPropertyTypes();
-    this.propertyStatuses = this.appService.getPropertyStatuses();
+    this.hotelsTypes = this.appService.hotelsTypes();
+    this.categoriesHotel = this.appService.categoriesHotel();
     this.cities = this.appService.getCities();
     this.neighborhoods = this.appService.getNeighborhoods();
     this.streets = this.appService.getStreets();  
@@ -41,10 +41,8 @@ export class SubmitPropertyComponent implements OnInit {
       basic: this.fb.group({
         title: [null, Validators.required],
         desc: null,
-        priceDollar: null,
-        priceEuro: null,
-        propertyType: [null, Validators.required],
-        propertyStatus: null, 
+        hotelType: [null, Validators.required],
+        hotelCateogry: [null, Validators.required], 
         gallery: null
       }),
       address: this.fb.group({
