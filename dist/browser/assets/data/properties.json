@@ -1,0 +1,1087 @@
+[
+    {
+        "id": 1,
+        "title": "Lancaster House", 
+        "desc": "Lancaster House es un hotel de 4 estrellas que está localizado en el barrio El Chicó, al norte de Bogotá, y le ofrece las 55 suites más amplias y confortables de la ciudad, completamente amobladas y con áreas desde 45 a 82 metros cuadrados, sin incluir terrazas, en un cálido ambiente Art Deco. Lancaster House se encuentra cerca de centros de negocios y comerciales, áreas residenciales, y está a solo 20 minutos del aeropuerto internacional El Dorado. Usted podrá escoger entre una selección de 45 Suites Junior que ofrecen una habitación con baño, o 10 Suites Master con dos habitaciones y dos baños. Cada una de estas Suites tiene una opción de terraza privada. Todas las suites tienen sala con sofá-cama, comedor y cocina completa. Para su conveniencia, las suites están dotadas de televisores LCD´s con sistema de Teatro en Casa y TV Cable internacional, conexión de Banda Ancha y Wi-Fi a Internet, marcación directa, mini-bar y cajilla de seguridad. Ofrece 2 restaurantes: Gatsby brinda platos de la cocina internacional y Bistro 106 se especializa en platos ligeros, menús del día y deliciosas tazas de café colombiano. También cuenta con un Bar que ofrece cocteles internacionales y música en vivo.",
+        "propertyType": "Hotel",
+        "city": "Bogota",
+        "zipCode": "10033",
+        "neighborhood": ["Astoria", "Midtown"],
+        "street": "Avenida Carrera 45 #106B - 28",
+        "location" : {
+            "lat": 40.849150,
+            "lng": -73.935100
+        },
+        "formattedAddress" : "611 W 180th St, New York, NY 10033, USA",
+        "simpleRoomsAvailable":5,
+        "singleRoomPrice":100000,
+        "doubleRoomsAvailable":2,
+        "doubleRoomPrice":150000,
+        "totalRoomsAvailable":9,
+        "availableDays":5,
+        "features": ["Wi-Fi en el lobby", "Spa", "Aire Acond. ", "Wi-Fi gratis", "Parqueadero", "Restaurante", "Mascotas permitidas", "Bar"],
+        "featured": false, 
+        "priceDollar": {
+            "sale": 1300000,
+            "rent": null
+        },
+        "priceEuro": {
+            "sale": 1160000,
+            "rent": null
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 2380,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2007,
+        "ratingsCount": 3,
+        "ratingsValue": 280,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [         
+            {
+                "small": "assets/images/props/flat-1/1-small.jpg",
+                "medium": "assets/images/props/flat-1/1-medium.jpg",
+                "big": "assets/images/props/flat-1/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/2-small.jpg",
+                "medium": "assets/images/props/flat-1/2-medium.jpg",
+                "big": "assets/images/props/flat-1/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/3-small.jpg",
+                "medium": "assets/images/props/flat-1/3-medium.jpg",
+                "big": "assets/images/props/flat-1/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/4-small.jpg",
+                "medium": "assets/images/props/flat-1/4-medium.jpg",
+                "big": "assets/images/props/flat-1/4-big.jpg"
+            }
+        ],
+        "published": "2012-08-12 17:17:30",
+        "lastUpdate": "2019-05-20 14:20:00",
+        "views": 322
+    },
+    {
+        "id": 2,
+        "title": "Hemma Bogota", 
+        "desc": "El Hemma Bogotá está bien situado en el distrito Usaquén de Bogotá, a 2,4 km del centro comercial Unicentro, a 8 km de la Zona T y a 11 km del estadio El Campín. Este hotel de 4 estrellas ofrece servicio de conserjería y consigna de equipaje. Hay recepción 24 horas, servicio de habitaciones y cambio de divisa. Las habitaciones incluyen armario, TV de pantalla plana, baño privado, ropa de cama, toallas y balcón con vistas a la montaña. Las habitaciones disponen de caja fuerte y WiFi gratuita, mientras que algunas tienen vistas a la ciudad. Las habitaciones incluyen lavavajillas. El Hemma Bogotá sirve un desayuno continental diario. El centro internacional de exposiciones Corferias se encuentra a 15 km del alojamiento, mientras que la plaza Bolívar está a 17 km. A las parejas les encanta la ubicación.",
+        "propertyType": "Office",
+        "propertyStatus": ["For Rent", "No Fees"],
+        "city": "Bogota",
+        "zipCode": "90044",
+        "neighborhood": ["Hollywood", "Highland Park"],
+        "street": ["Hollywood Street #2", "Highland Park Street #1"],
+        "location" : {
+            "lat": 33.954220,
+            "lng": -118.293730
+        },
+        "formattedAddress" : "1052 W 91st St, Los Angeles, CA 90044, USA",
+        "simpleRoomsAvailable":5,
+        "singleRoomPrice":100000,
+        "doubleRoomsAvailable":2,
+        "doubleRoomPrice":150000,
+        "totalRoomsAvailable":9,
+        "availableDays":1,
+
+        "features": ["Wi-Fi en el lobby", "Spa", "Aire Acond. ", "Wi-Fi gratis", "Parqueadero", "Restaurante", "Mascotas permitidas", "Bar"],
+        "featured": true,
+        "priceDollar": {
+            "sale": null,
+            "rent": 6500
+        },
+        "priceEuro": {
+            "sale": null,
+            "rent": 5800
+        },
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "garages": 2,
+        "area": {
+            "value": 1500,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2012,
+        "ratingsCount": 4,
+        "ratingsValue": 400,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/office/1-small.jpg",
+                "medium": "assets/images/props/office/1-medium.jpg",
+                "big": "assets/images/props/office/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office/2-small.jpg",
+                "medium": "assets/images/props/office/2-medium.jpg",
+                "big": "assets/images/props/office/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office/3-small.jpg",
+                "medium": "assets/images/props/office/3-medium.jpg",
+                "big": "assets/images/props/office/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office/4-small.jpg",
+                "medium": "assets/images/props/office/4-medium.jpg",
+                "big": "assets/images/props/office/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office/5-small.jpg",
+                "medium": "assets/images/props/office/5-medium.jpg",
+                "big": "assets/images/props/office/5-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office/6-small.jpg",
+                "medium": "assets/images/props/office/6-medium.jpg",
+                "big": "assets/images/props/office/6-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2013-09-12 12:20:30",
+        "lastUpdate": "2019-05-20 14:20:00",
+        "views": 408
+    },
+    {
+        "id": 3,
+        "title": "Faranda Collection Bogotá", 
+        "desc": "Para un relax sin igual, nada como una visita al spa, que ofrece masajes, tratamientos corporales y tratamientos faciales. La diversión está asegurada en este alojamiento, que ofrece una bañera de hidromasaje, una sauna y un gimnasio. En este hotel de estilo Beaux Arts encontrarás también conexión a Internet wifi gratis y servicios de conserjería.Cuando te apetezca almorzar o cenar solo tendrás que ir a Restaurant CHB, el restaurante de este hotel, o incluso simplemente llamar al servicio de habitaciones con horario limitado. Se ofrece un desayuno típico de la región gratuito todos los días de 6:30 a 10:30.Tendrás periódicos gratuitos en el vestíbulo, un servicio de recepción las 24 horas y consigna de equipaje a tu disposición. Este hotel pone a tu disposición 2 salas de reuniones donde celebrar todo tipo de eventos. Pagando un pequeño suplemento podrás aprovechar prestaciones como servicio de transporte al aeropuerto (ida y vuelta) disponible 24 horas y aparcamiento sin asistencia gratuito.Te sentirás como en tu propia casa en cualquiera de las 43 habitaciones con frigorífico y televisión LCD. La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; también podrás ver tu programa favorito en el televisor con canales por cable. El cuarto de baño está provisto de ducha y secadores de pelo. Entre las comodidades, se incluyen caja fuerte (cabe un portátil) y escritorio, además de un servicio de limpieza disponible todos los días.Las distancias se expresan en números redondos. Magdalena River: 0,1 km Embajada de Costa Rica: 0,4 km Centro comercial Unicentro Bogotá: 1,1 km Embajada de Canadá: 1,2 km Hospital Fundación Santa Fe de Bogotá: 1,2 km Centro Comercial Hacienda Santa Bárbara: 1,2 km Mercadillo de Usaquén: 1,7 km Country Club de Bogotá: 1,9 km World Trade Center: 1,9 km Clínica Reina Sofía: 2,4 km Parque de la 93: 2,4 km Universidad El Bosque: 2,7 km Embajada de España: 2,8 km Embajada de Francia: 2,8 km Museo Mercedes Sierra de Pérez El Chicó: 3 km El aeropuerto más práctico para llegar a Faranda Collection Bogota, a member of Radisson Individuals se encuentra en Bogotá (BOG-El Dorado Intl.): 17,5 km Si decides alojarte en Faranda Collection Bogota, a member of Radisson Individuals, te encontrarás en una fantástica zona de Bogotá (Usaquén), a solo unos pasos de Magdalena River y a apenas 4 min a pie de Embajada de Costa Rica. Además, este hotel de 4 estrellas se encuentra a 1,1 km de Centro comercial Unicentro Bogotá y a 3,4 km de Parque de la 93.En Bogotá (Usaquén).",
+        "propertyType": "House",
+        "propertyStatus": ["For Sale", "Open House"],
+        "city": "Bogota",
+        "zipCode": "98104",
+        "neighborhood": ["Belltown"],
+        "street": ["Belltown Street #1", "Belltown Street #2"],
+        "location" : {
+            "lat": 47.602760,
+            "lng": -122.331440
+        },
+        "formattedAddress" : "3rd Ave & James St, Seattle, WA 98104, USA", 
+        "simpleRoomsAvailable":2,
+        "singleRoomPrice":90000,
+        "doubleRoomsAvailable":1,
+        "doubleRoomPrice":170000,
+        "totalRoomsAvailable":4,
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Fireplace", "Sauna", "TV Cable", "WiFi"],
+        "featured": false, 
+        "priceDollar": {
+            "sale": 2550000,
+            "rent": null
+        },
+        "priceEuro": {
+            "sale": 2280000,
+            "rent": null
+        },
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "garages": 1,
+        "area": {
+            "value": 2100,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2010,
+        "ratingsCount": 7,
+        "ratingsValue": 560,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [            
+            {
+                "small": "assets/images/props/house-1/1-small.jpg",
+                "medium": "assets/images/props/house-1/1-medium.jpg",
+                "big": "assets/images/props/house-1/1-big.jpg"
+            },         
+            {
+                "small": "assets/images/props/house-1/2-small.jpg",
+                "medium": "assets/images/props/house-1/2-medium.jpg",
+                "big": "assets/images/props/house-1/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-1/3-small.jpg",
+                "medium": "assets/images/props/house-1/3-medium.jpg",
+                "big": "assets/images/props/house-1/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-1/4-small.jpg",
+                "medium": "assets/images/props/house-1/4-medium.jpg",
+                "big": "assets/images/props/house-1/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-1/5-small.jpg",
+                "medium": "assets/images/props/house-1/5-medium.jpg",
+                "big": "assets/images/props/house-1/5-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-1/6-small.jpg",
+                "medium": "assets/images/props/house-1/6-medium.jpg",
+                "big": "assets/images/props/house-1/6-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2011-05-12 18:20:00",
+        "lastUpdate": "2019-06-18 14:20:00",
+        "views": 587
+    },
+    {
+        "id": 4,
+        "title": "Brisas De Calima", 
+        "desc": "Hotel Bisas de Calima, prestador de servicio de alojamiento para turistas, negocios, corporaciones… situados en un lugar privilegiado y exclusivo en el norte de Cali y con cercanía a la zona céntrica, industrial Acopi Yumbo, a 20 minutos del aeropuerto Alfonso Bonilla Aragón, cerca al terminal de transportes, rodeado de grandes centros comerciales, restaurantes, salas de cine, sitios turísticos y fácil acceso a las vías principales de la Ciudad de Cali donde se respira un ambiente de confort, paz y tranquilidad en su estadía. Nos hemos preparado para prestar a los clientes una excelente oferta, nuestra ubicación estratégica, excelente servicio y cómodos precios serán la clave para una relación comercial a largo plazo.",
+        "propertyType": "Apartment",
+        "propertyStatus": ["Hot Offer", "No Fees"],
+        "city": "Cali",
+        "zipCode": "60604",
+        "neighborhood": ["Riverdale"],
+        "street": ["Riverdale Street #1"],
+        "location" : {
+            "lat": 41.878113,
+            "lng": -87.629799
+        },
+        "formattedAddress": "55 W Jackson Blvd, Chicago, IL 60604, USA", 
+        "simpleRoomsAvailable":10,
+        "singleRoomPrice":130000,
+        "doubleRoomsAvailable":5,
+        "totalRoomsAvailable":20,
+        "doubleRoomPrice":250000,
+        "availableDays":10,
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Fireplace", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": 1450000,
+            "rent": null
+        },
+        "priceEuro": {
+            "sale": 1300000,
+            "rent": null
+        },
+        "bedrooms": 5,
+        "bathrooms": 2,
+        "garages": 2,
+        "area": {
+            "value": 1700,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2002,
+        "ratingsCount": 3,
+        "ratingsValue": 220,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/flat-2/1-small.jpg",
+                "medium": "assets/images/props/flat-2/1-medium.jpg",
+                "big": "assets/images/props/flat-2/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/2-small.jpg",
+                "medium": "assets/images/props/flat-2/2-medium.jpg",
+                "big": "assets/images/props/flat-2/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/3-small.jpg",
+                "medium": "assets/images/props/flat-2/3-medium.jpg",
+                "big": "assets/images/props/flat-2/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/4-small.jpg",
+                "medium": "assets/images/props/flat-2/4-medium.jpg",
+                "big": "assets/images/props/flat-2/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/5-small.jpg",
+                "medium": "assets/images/props/flat-2/5-medium.jpg",
+                "big": "assets/images/props/flat-2/5-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2016-10-12 18:20:00",
+        "lastUpdate": "2019-06-11 14:20:00",
+        "views": 754
+    },
+    {
+        "id": 5,
+        "title": "Cali Plaza Ingenio", 
+        "desc": "Enjoy a relaxing stay in bright and modern accommodations when you choose Hotel Cali Plaza Ingenio, a small property that offers a breakfast restaurant and complimentary wireless Internet throughout the guestrooms and public areas. Located in southern Cali, the hotel is within half an hour of a local shopping mall and the downtown area. CheckIn: 3:00 p.m., CheckOut: 1:00 p.m.Pequeño hotel a 45 minutos del Aeropuerto, con restaurante, sala de juntas y amplias habitaciones WiFi.Hotel Ingenio Reina Isabel está a 45 minutos del Aeropuerto de Cali. *Ubicado en la colonia El Ingenio. *En la zona sur de Cali. *A 500 m del consulado de Chile. *A 600 m del Parque del Ingenio. *A 5 minutos de la Universidad del Valle. *A 5 minutos del Centro Comercial Jardín Plaza. *A 5 minutos del Centro Comercial Aventura Plaza. *A 5 minutos del hospital Valle del Lili. *A menos de 15 minutos del centro comercial Unicentro Cali. *Aproximadamente a media hora del centro de la ciudad..",
+        "propertyType": "House",
+        "propertyStatus": ["Sold", "For Sale"],
+        "city": "Seattle",
+        "zipCode": "98108",
+        "neighborhood": ["Queen Anne", "Belltown"],
+        "street": ["Queen Anne Street #1", "Belltown Street #2"],
+        "location" : {
+            "lat": 47.603230,
+            "lng": -122.330276
+        },
+        "formattedAddress": "5921 17th Ave S, Seattle, WA 98108, USA", 
+        "simpleRoomsAvailable":4,
+        "singleRoomPrice":100000,
+        "doubleRoomsAvailable":1,
+        "doubleRoomPrice":150000,
+        "totalRoomsAvailable":6,
+        "availableDays":5,
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": 4500000,
+            "rent": null
+        },
+        "priceEuro": {
+            "sale": 4020000,
+            "rent": null
+        },
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "garages": 1,
+        "area": {
+            "value": 2200,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2007,
+        "ratingsCount": 6,
+        "ratingsValue": 480,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/house-3/1-small.jpg",
+                "medium": "assets/images/props/house-3/1-medium.jpg",
+                "big": "assets/images/props/house-3/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-3/2-small.jpg",
+                "medium": "assets/images/props/house-3/2-medium.jpg",
+                "big": "assets/images/props/house-3/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-3/3-small.jpg",
+                "medium": "assets/images/props/house-3/3-medium.jpg",
+                "big": "assets/images/props/house-3/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-3/4-small.jpg",
+                "medium": "assets/images/props/house-3/4-medium.jpg",
+                "big": "assets/images/props/house-3/4-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2017-11-20 10:20:00",
+        "lastUpdate": "2019-04-14 14:20:00",
+        "views": 633
+    },
+    {
+        "id": 6,
+        "title": "Hotel Dorado La 70", 
+        "desc": "El Hotel Dorado la 70, un lugar exclusivo y moderno para sus estadías de negocios y de entretenimiento en Medellín, ubicado estratégicamente. Sobre el corredor turístico de la carrera 70, en el barrio Florida Nueva. Sector cercano a los principales atractivos de la ciudad, zonas comercial zonas y financieras, de rápido acceso a plaza mayor, el centro administrativo La Alpujarra y a dos cuadras de la Estación Estadio del Metro Estadio. Con 158 espaciosas habitaciones especialmente diseñadas para su descanso y confort y completamente dotadas para su comodidad. Cuenta con restaurante - bar, Café OMA, salones para eventos con capacidad hasta 200 personas, gimnasio, turco, terraza - solárium y parqueadero cubierto.",
+        "propertyType": "House",
+        "propertyStatus": ["For Rent", "No Fees"],
+        "city": "Medellin",
+        "zipCode": "60609",
+        "neighborhood": ["Englewood", "Austin"],
+        "street": ["Englewood Street #2", "Austin Street #2"],
+        "location" : {
+            "lat": 41.814080,
+            "lng": -87.660410
+        },
+        "formattedAddress": "1400 W 44th St, Chicago, IL 60609, USA", 
+        "simpleRoomsAvailable":1,
+        "singleRoomPrice":100000,
+        "doubleRoomsAvailable":1,
+        "totalRoomsAvailable":3,
+        "doubleRoomPrice":150000,
+        "availableDays":15,
+        "features": ["Refrigerator", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": null,
+            "rent": 9000
+        },
+        "priceEuro": {
+            "sale": null,
+            "rent": 8000
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 1600,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2017,
+        "ratingsCount": 5,
+        "ratingsValue": 400,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/house-2/1-small.jpg",
+                "medium": "assets/images/props/house-2/1-medium.jpg",
+                "big": "assets/images/props/house-2/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-2/2-small.jpg",
+                "medium": "assets/images/props/house-2/2-medium.jpg",
+                "big": "assets/images/props/house-2/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-2/3-small.jpg",
+                "medium": "assets/images/props/house-2/3-medium.jpg",
+                "big": "assets/images/props/house-2/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-2/4-small.jpg",
+                "medium": "assets/images/props/house-2/4-medium.jpg",
+                "big": "assets/images/props/house-2/4-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2013-11-19 18:20:00",
+        "lastUpdate": "2019-06-08 14:20:00",
+        "views": 256
+    },
+    {
+        "id": 7,
+        "title": "Lleras Express", 
+        "desc": "UBICACIÓN. Nuestros Hotel se encuentra ubicado a una cuadra del Parque Lleras, cerca de los centros comerciales más importantes de la ciudad, a la Milla de Oro, a la estación del Metro del Poblado, a la Zona Rosa y a cinco minutos del Aeropuerto Olaya Herrera y a cuarenta minutos del Aeropuerto Internacional José María Córdoba. Está a 5 minutos en carro del MAM. SERVICIOS. • Contamos con el servicio de: • Alojamiento. • Desayuno americano. • Recepción las 24 horas. • Internet wifi. • Cajilla de seguridad. • T.V. por cable. • Aire acondicionado. • Parqueadero. • Planes románticos. HABITACIONES: • Estándar. • Twin. • Twin Especial. • Suite. • Gran Suite. • Superior Deluxe.",
+        "propertyType": "Office",
+        "propertyStatus": ["For Sale", "Hot Offer"],
+        "city": "Medellin",
+        "zipCode": "10019",
+        "neighborhood": ["Englewood", "Austin"],
+        "street": ["Englewood Street #2", "Austin Street #2"],
+        "location" : {
+            "lat": 40.716761,
+            "lng": -73.999958
+        },
+        "formattedAddress": "230 W 55th St, New York, NY 10019, USA", 
+        "simpleRoomsAvailable":2,
+        "singleRoomPrice":100000,
+        "doubleRoomsAvailable":2,
+        "totalRoomsAvailable":6,
+        "doubleRoomPrice":150000,
+        "availableDays":20,
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": false, 
+        "priceDollar": {
+            "sale": 2500000,
+            "rent": null
+        },
+        "priceEuro": {
+            "sale": 2200000,
+            "rent": null
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 3200,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2017,
+        "ratingsCount": 7,
+        "ratingsValue": 700,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/office-2/1-small.jpg",
+                "medium": "assets/images/props/office-2/1-medium.jpg",
+                "big": "assets/images/props/office-2/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/2-small.jpg",
+                "medium": "assets/images/props/office-2/2-medium.jpg",
+                "big": "assets/images/props/office-2/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/3-small.jpg",
+                "medium": "assets/images/props/office-2/3-medium.jpg",
+                "big": "assets/images/props/office-2/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/4-small.jpg",
+                "medium": "assets/images/props/office-2/4-medium.jpg",
+                "big": "assets/images/props/office-2/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/5-small.jpg",
+                "medium": "assets/images/props/office-2/5-medium.jpg",
+                "big": "assets/images/props/office-2/5-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/6-small.jpg",
+                "medium": "assets/images/props/office-2/6-medium.jpg",
+                "big": "assets/images/props/office-2/6-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2017-08-12 18:20:00",
+        "lastUpdate": "2019-03-29 14:20:00",
+        "views": 470
+    },
+    {
+        "id": 8,
+        "title": "Crowne Plaza Barranquilla", 
+        "desc": "Le damos la bienvenida a Barranquilla, La Arenosa, la ciudad del progreso en Colombia. Ubicados a 39 minutos del Aeropuerto Ernesto Cortissoz (BAQ), el Hotel Crowne Plaza, junto a sus beneficios respaldados por la marca internacional IHG, se convierten en la opción ideal para viajantes por negocio o turismo. Nuestra ubicación estratégica le permitirá estar cerca a los más modernos Centros Comerciales de la ciudad, donde estará rodeado de marcas reconocidas internacionalmente, como Calvin Klein, Zara, Mango, Studio F, Adidas, Nike, entre otros; así como también estará a contados pasos de diferentes opciones gastronómicas locales e internacionales, principales vías de acceso y centros de negocios de la ciudad. Con 13 pisos donde son distribuidas nuestras amplias y cómodas habitaciones, ideales para descansar y recargar energías, ponemos a disposición de nuestros huéspedes múltiples beneficios, como la sala de acondicionamiento físico, sauna, business center, room service, Piscina con vista panorámica en el último piso, restaurante-bar y todos los beneficios del programa IHG Rewards Club. Esperamos con gusto que se sume al grupo selecto de huéspedes que viven la experiencia Crowne Plaza en Barranquilla ¡Bienvenido!",
+        "propertyType": "Apartment",
+        "propertyStatus": ["For Rent", "No Fees"],
+        "city": "Barranquilla",
+        "zipCode": "90028",
+        "neighborhood": ["Englewood", "Austin"],
+        "street": ["Englewood Street #2", "Austin Street #2"],
+        "location" : {
+            "lat": 34.100570,
+            "lng": -118.327440
+        },
+        "formattedAddress": "1627 Vine St, Los Angeles, CA 90028, USA", 
+        "simpleRoomsAvailable":5,
+        "singleRoomPrice":100000,
+        "doubleRoomsAvailable":2,
+        "totalRoomsAvailable":10,
+        "doubleRoomPrice":150000,
+        "availableDays":7,
+        "features": ["Air Conditioning", "Refrigerator", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": null,
+            "rent": 5600
+        },
+        "priceEuro": {
+            "sale": null,
+            "rent": 5000
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 1600,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2017,
+        "ratingsCount": 4,
+        "ratingsValue": 380,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/apartment/1-small.jpg",
+                "medium": "assets/images/props/apartment/1-medium.jpg",
+                "big": "assets/images/props/apartment/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/2-small.jpg",
+                "medium": "assets/images/props/apartment/2-medium.jpg",
+                "big": "assets/images/props/apartment/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/3-small.jpg",
+                "medium": "assets/images/props/apartment/3-medium.jpg",
+                "big": "assets/images/props/apartment/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/4-small.jpg",
+                "medium": "assets/images/props/apartment/4-medium.jpg",
+                "big": "assets/images/props/apartment/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/5-small.jpg",
+                "medium": "assets/images/props/apartment/5-medium.jpg",
+                "big": "assets/images/props/apartment/5-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2016-03-29 05:20:00",
+        "lastUpdate": "2019-06-26 14:20:00",
+        "views": 852
+    }    
+]

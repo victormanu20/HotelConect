@@ -1,0 +1,144 @@
+{
+    "id": 3,
+    "title": "Faranda Collection Bogotá", 
+    "desc": "Para un relax sin igual, nada como una visita al spa, que ofrece masajes, tratamientos corporales y tratamientos faciales. La diversión está asegurada en este alojamiento, que ofrece una bañera de hidromasaje, una sauna y un gimnasio. En este hotel de estilo Beaux Arts encontrarás también conexión a Internet wifi gratis y servicios de conserjería.Cuando te apetezca almorzar o cenar solo tendrás que ir a Restaurant CHB, el restaurante de este hotel, o incluso simplemente llamar al servicio de habitaciones con horario limitado. Se ofrece un desayuno típico de la región gratuito todos los días de 6:30 a 10:30.Tendrás periódicos gratuitos en el vestíbulo, un servicio de recepción las 24 horas y consigna de equipaje a tu disposición. Este hotel pone a tu disposición 2 salas de reuniones donde celebrar todo tipo de eventos. Pagando un pequeño suplemento podrás aprovechar prestaciones como servicio de transporte al aeropuerto (ida y vuelta) disponible 24 horas y aparcamiento sin asistencia gratuito.Te sentirás como en tu propia casa en cualquiera de las 43 habitaciones con frigorífico y televisión LCD. La conexión a Internet wifi gratis te mantendrá en contacto con los tuyos; también podrás ver tu programa favorito en el televisor con canales por cable. El cuarto de baño está provisto de ducha y secadores de pelo. Entre las comodidades, se incluyen caja fuerte (cabe un portátil) y escritorio, además de un servicio de limpieza disponible todos los días.Las distancias se expresan en números redondos. Magdalena River: 0,1 km Embajada de Costa Rica: 0,4 km Centro comercial Unicentro Bogotá: 1,1 km Embajada de Canadá: 1,2 km Hospital Fundación Santa Fe de Bogotá: 1,2 km Centro Comercial Hacienda Santa Bárbara: 1,2 km Mercadillo de Usaquén: 1,7 km Country Club de Bogotá: 1,9 km World Trade Center: 1,9 km Clínica Reina Sofía: 2,4 km Parque de la 93: 2,4 km Universidad El Bosque: 2,7 km Embajada de España: 2,8 km Embajada de Francia: 2,8 km Museo Mercedes Sierra de Pérez El Chicó: 3 km El aeropuerto más práctico para llegar a Faranda Collection Bogota, a member of Radisson Individuals se encuentra en Bogotá (BOG-El Dorado Intl.): 17,5 km Si decides alojarte en Faranda Collection Bogota, a member of Radisson Individuals, te encontrarás en una fantástica zona de Bogotá (Usaquén), a solo unos pasos de Magdalena River y a apenas 4 min a pie de Embajada de Costa Rica. Además, este hotel de 4 estrellas se encuentra a 1,1 km de Centro comercial Unicentro Bogotá y a 3,4 km de Parque de la 93.En Bogotá (Usaquén).",
+    "propertyType": "House",
+    "propertyStatus": ["For Sale", "Open House"],
+    "city": "Bogota",
+    "zipCode": "98104",
+    "neighborhood": ["Belltown"],
+    "street": ["Belltown Street #1", "Belltown Street #2"],
+    "location" : {
+        "lat": 47.602760,
+        "lng": -122.331440
+    },
+    "formattedAddress" : "3rd Ave & James St, Seattle, WA 98104, USA", 
+    "simpleRoomsAvailable":2,
+    "singleRoomPrice":90000,
+    "doubleRoomsAvailable":1,
+    "doubleRoomPrice":170000,
+    "totalRoomsAvailable":4,
+    "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Fireplace", "Sauna", "TV Cable", "WiFi"],
+    "featured": false, 
+    "priceDollar": {
+        "sale": 2550000,
+        "rent": null
+    },
+    "priceEuro": {
+        "sale": 2280000,
+        "rent": null
+    },
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "garages": 1,
+    "area": {
+        "value": 2100,
+        "unit": "ft²"
+    },
+    "yearBuilt": 2010,
+    "ratingsCount": 7,
+    "ratingsValue": 560,
+    "additionalFeatures": [                
+        {
+            "name": "Heat",
+            "value": "Natural Gas"
+        },
+        {
+            "name": "Roof",
+            "value": "Composition/Shingle"
+        },
+        {
+            "name": "Floors",
+            "value": "Wall-to-Wall Carpet"
+        },
+        {
+            "name": "Water",
+            "value": "District/Public"
+        },
+        {
+            "name": "Cross Streets",
+            "value": "Orangethorpe-Gilbert"
+        },
+        {
+            "name": "Windows",
+            "value": "Skylights"
+        },
+        {
+            "name": "Flat",
+            "value": "5"
+        },
+        {
+            "name": "Childroom",
+            "value": "2"
+        }
+    ],
+    "gallery": [            
+        {
+            "small": "assets/images/props/house-1/1-small.jpg",
+            "medium": "assets/images/props/house-1/1-medium.jpg",
+            "big": "assets/images/props/house-1/1-big.jpg"
+        },         
+        {
+            "small": "assets/images/props/house-1/2-small.jpg",
+            "medium": "assets/images/props/house-1/2-medium.jpg",
+            "big": "assets/images/props/house-1/2-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-1/3-small.jpg",
+            "medium": "assets/images/props/house-1/3-medium.jpg",
+            "big": "assets/images/props/house-1/3-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-1/4-small.jpg",
+            "medium": "assets/images/props/house-1/4-medium.jpg",
+            "big": "assets/images/props/house-1/4-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-1/5-small.jpg",
+            "medium": "assets/images/props/house-1/5-medium.jpg",
+            "big": "assets/images/props/house-1/5-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-1/6-small.jpg",
+            "medium": "assets/images/props/house-1/6-medium.jpg",
+            "big": "assets/images/props/house-1/6-big.jpg"
+        }
+    ],
+    "plans": [
+        {
+            "name": "First floor",
+            "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+            "area": {
+                "value": 1180,
+                "unit": "ft²"
+            },
+            "rooms": 3,
+            "baths": 1,
+            "image": "assets/images/others/plan-1.jpg"
+        },
+        {
+            "name": "Second floor",
+            "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+            "area": {
+                "value": 1200,
+                "unit": "ft²"
+            },
+            "rooms": 5,
+            "baths": 2,
+            "image": "assets/images/others/plan-2.jpg"
+        }
+    ],
+    "videos": [
+        {
+            "name": "Video",
+            "link": "http://themeseason.com/data/videos/video-1.mp4"
+        },
+        {
+            "name": "Video with 'ngx-embed-video' plugin",
+            "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+        }
+    ],
+    "published": "2011-05-12 18:20:00",
+    "lastUpdate": "2019-06-18 14:20:00",
+    "views": 587
+}

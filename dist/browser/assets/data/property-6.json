@@ -1,0 +1,135 @@
+{
+    "id": 6,
+    "title": "Hotel Dorado La 70", 
+    "desc": "El Hotel Dorado la 70, un lugar exclusivo y moderno para sus estadías de negocios y de entretenimiento en Medellín, ubicado estratégicamente. Sobre el corredor turístico de la carrera 70, en el barrio Florida Nueva. Sector cercano a los principales atractivos de la ciudad, zonas comercial zonas y financieras, de rápido acceso a plaza mayor, el centro administrativo La Alpujarra y a dos cuadras de la Estación Estadio del Metro Estadio. Con 158 espaciosas habitaciones especialmente diseñadas para su descanso y confort y completamente dotadas para su comodidad. Cuenta con restaurante - bar, Café OMA, salones para eventos con capacidad hasta 200 personas, gimnasio, turco, terraza - solárium y parqueadero cubierto.",
+    "propertyType": "House",
+    "propertyStatus": ["For Rent", "No Fees"],
+    "city": "Medellin",
+    "zipCode": "60609",
+    "neighborhood": ["Englewood", "Austin"],
+    "street": ["Englewood Street #2", "Austin Street #2"],
+    "location" : {
+        "lat": 41.814080,
+        "lng": -87.660410
+    },
+    "formattedAddress": "1400 W 44th St, Chicago, IL 60609, USA", 
+    "simpleRoomsAvailable":1,
+    "singleRoomPrice":100000,
+    "doubleRoomsAvailable":1,
+    "totalRoomsAvailable":3,
+    "doubleRoomPrice":150000,
+    "availableDays":15,
+    "features": ["Refrigerator", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+    "featured": true, 
+    "priceDollar": {
+        "sale": null,
+        "rent": 9000
+    },
+    "priceEuro": {
+        "sale": null,
+        "rent": 8000
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "garages": 1,
+    "area": {
+        "value": 1600,
+        "unit": "ft²"
+    },
+    "yearBuilt": 2017,
+    "ratingsCount": 5,
+    "ratingsValue": 400,
+    "additionalFeatures": [                
+        {
+            "name": "Heat",
+            "value": "Natural Gas"
+        },
+        {
+            "name": "Roof",
+            "value": "Composition/Shingle"
+        },
+        {
+            "name": "Floors",
+            "value": "Wall-to-Wall Carpet"
+        },
+        {
+            "name": "Water",
+            "value": "District/Public"
+        },
+        {
+            "name": "Cross Streets",
+            "value": "Orangethorpe-Gilbert"
+        },
+        {
+            "name": "Windows",
+            "value": "Skylights"
+        },
+        {
+            "name": "Flat",
+            "value": "5"
+        },
+        {
+            "name": "Childroom",
+            "value": "2"
+        }
+    ],
+    "gallery": [
+        {
+            "small": "assets/images/props/house-2/1-small.jpg",
+            "medium": "assets/images/props/house-2/1-medium.jpg",
+            "big": "assets/images/props/house-2/1-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-2/2-small.jpg",
+            "medium": "assets/images/props/house-2/2-medium.jpg",
+            "big": "assets/images/props/house-2/2-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-2/3-small.jpg",
+            "medium": "assets/images/props/house-2/3-medium.jpg",
+            "big": "assets/images/props/house-2/3-big.jpg"
+        },
+        {
+            "small": "assets/images/props/house-2/4-small.jpg",
+            "medium": "assets/images/props/house-2/4-medium.jpg",
+            "big": "assets/images/props/house-2/4-big.jpg"
+        }
+    ],
+    "plans": [
+        {
+            "name": "First floor",
+            "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+            "area": {
+                "value": 1180,
+                "unit": "ft²"
+            },
+            "rooms": 3,
+            "baths": 1,
+            "image": "assets/images/others/plan-1.jpg"
+        },
+        {
+            "name": "Second floor",
+            "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+            "area": {
+                "value": 1200,
+                "unit": "ft²"
+            },
+            "rooms": 5,
+            "baths": 2,
+            "image": "assets/images/others/plan-2.jpg"
+        }
+    ],
+    "videos": [
+        {
+            "name": "Video",
+            "link": "http://themeseason.com/data/videos/video-1.mp4"
+        },
+        {
+            "name": "Video with 'ngx-embed-video' plugin",
+            "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+        }
+    ],
+    "published": "2013-11-19 18:20:00",
+    "lastUpdate": "2019-06-08 14:20:00",
+    "views": 256
+}
