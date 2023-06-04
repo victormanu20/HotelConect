@@ -33,7 +33,6 @@ export class reserveComponent implements OnInit {
     const dialogRef = this.dialog.open(DetailReservationComponent);
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
     });
   }
   public getReservations(){  

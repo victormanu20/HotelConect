@@ -93,7 +93,6 @@ export class HomeComponent implements OnInit {
         this.pagination.page = this.settings.loadMore.page; 
       }
       let result = this.filterData(data); 
-      console.log('result',result)
       if(result.data.length == 0){
         this.properties.length = 0;
         this.pagination = new Pagination(1, this.count, null, 2, 0, 0);  
@@ -145,7 +144,6 @@ export class HomeComponent implements OnInit {
     this.getProperties(); 
   }
   public searchChanged(event){   
-    console.log(event) 
     event.valueChanges.subscribe(() => {
       this.resetLoadMore();
       this.searchFields = event.value;

@@ -163,7 +163,6 @@ let SubmitPropertyComponent = class SubmitPropertyComponent {
     // }
     getAddress() {
         this.appService.getAddress(this.lat, this.lng).subscribe(response => {
-            console.log(response);
             if (response['results'].length) {
                 let address = response['results'][0].formatted_address;
                 this.submitForm.controls.address.get('location').setValue(address);
@@ -177,7 +176,6 @@ let SubmitPropertyComponent = class SubmitPropertyComponent {
         this.getAddress();
     }
     onMarkerClick(e) {
-        console.log(e);
     }
     setAddresses(result) {
         this.submitForm.controls.address.get('city').setValue(null);

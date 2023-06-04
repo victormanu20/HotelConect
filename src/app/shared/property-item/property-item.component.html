@@ -29,7 +29,7 @@
 
         <div fxLayout="column" fxLayoutAlign="start stretch" class="h-100">
             <mat-card-content class="mb-0">
-                <h1 class="title"><a [routerLink]="['/properties', property.id]">{{property.title}}</a></h1>
+                <h1 class="title">{{property.title}}</h1>
                 <h3 fxLayout="row" class="type">
                     <span>{{property.propertyType}}</span>
                 </h3>
@@ -74,7 +74,7 @@
                     <span class="mx-2">{{property.published | date:"dd MMMM, yyyy" }}</span>
                 </p>
                 <div>
-                    <a [routerLink]="['/properties', property.id]" target="_blank" mat-stroked-button color="primary" class="uppercase"
+                    <a [routerLink]="['/properties', property.id]"  mat-button color="primary" class="uppercase"
                     (click)="selectedProperty()"
 
                     > {{"TEXT_INPUT.VIEW_OFFER" | translate}}</a>

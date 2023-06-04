@@ -52,13 +52,11 @@ export class ContactComponent implements OnInit {
       )
     }
 
-    console.log('suer',this.users)
     
   }
 
   public onContactFormSubmit(values:Object):void {
     if (this.contactForm.valid) {
-      console.log(values);
     }
   }
 

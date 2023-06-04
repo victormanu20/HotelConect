@@ -284,13 +284,11 @@ export class FooterComponent implements OnInit {
 
   public onFeedbackFormSubmit(values:Object):void {
     if (this.feedbackForm.valid) {
-      console.log(values);
     }
   }
 
   public onSubscribeFormSubmit(values:Object):void {
     if (this.subscribeForm.valid) {
-      console.log(values);
     }
   }
 

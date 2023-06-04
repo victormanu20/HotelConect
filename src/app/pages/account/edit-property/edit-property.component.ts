@@ -86,7 +86,6 @@ export class EditPropertyComponent implements OnInit {
 
   public getPropertyById(id){
     this.appService.getPropertyById(id).subscribe(data=>{
-      console.log(data)
       this.property = data;
 
       this.submitForm.controls.basic.get('title').setValue(this.property.title);
@@ -229,7 +228,6 @@ export class EditPropertyComponent implements OnInit {
     this.getAddress();
   }
   public onMarkerClick(e:any){
-    console.log(e);
   }
   
   public setAddresses(result){

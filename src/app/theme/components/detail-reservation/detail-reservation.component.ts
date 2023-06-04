@@ -22,7 +22,6 @@ export class DetailReservationComponent implements OnInit {
 
   ngOnInit(): void {
     this.reserve= this.storeService.getReserve()
-    console.log("reser",this.reserve)
     if(window.innerWidth < 960){
       this.sidenavOpen = false;
       if(this.sidenav){

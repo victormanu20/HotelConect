@@ -46,7 +46,6 @@ export class PropertiesToolbarComponent implements OnInit {
   public changeViewType(viewType, viewCol){
     this.viewType = viewType;
     this.viewCol = viewCol;
-    console.log(this.viewCol)
     this.onChangeViewType.emit({viewType:viewType, viewCol:viewCol});
   }
 

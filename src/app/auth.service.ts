@@ -22,7 +22,6 @@ export class AuthService {
       switch (userSelect.role) {
         case 'admin':
           this.userRole = 'admin';
-          console.log("admin")
           break;
         case 'user':
           this.userRole = 'user';          

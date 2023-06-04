@@ -65,11 +65,9 @@ let ContactComponent = class ContactComponent {
                 phoneEmergency: ['', _angular_forms__WEBPACK_IMPORTED_MODULE_4__.Validators.required]
             }));
         }
-        console.log('suer', this.users);
     }
     onContactFormSubmit(values) {
         if (this.contactForm.valid) {
-            console.log(values);
         }
     }
 };

@@ -543,7 +543,6 @@ let AppService = class AppService {
         return this.http.get(this.url + 'slides.json');
     }
     filterData(data, params, sort, page, perPage) {
-        console.log('params', params);
         if (params) {
             if (params.propertyType) {
                 data = data.filter(property => property.propertyType == params.propertyType.name);
@@ -613,7 +612,6 @@ let AppService = class AppService {
             }
             if (params.city) {
                 data = data.filter(property => property.city == params.city.name);
-                console.log("data", data);
             }
             if (params.numAdults) {
                 data = data.filter(property => property.totalRoomsAvailable >= params.numAdults);
@@ -623,7 +621,6 @@ let AppService = class AppService {
                 const fecha2 = params.range.end;
                 const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
                 const diferenciaEnDias = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24));
-                console.log(diferenciaEnDias);
                 data = data.filter(property => property.availableDays >= diferenciaEnDias);
             }
             if (params.zipCode) {
@@ -800,7 +797,6 @@ let AppService = class AppService {
                     break;
             }
         }
-        console.log("Data re", data);
         return data;
     }
     paginator(items, page, perPage) {
@@ -1120,7 +1116,6 @@ let AuthService = class AuthService {
             switch (userSelect.role) {
                 case 'admin':
                     this.userRole = 'admin';
-                    console.log("admin");
                     break;
                 case 'user':
                     this.userRole = 'user';
@@ -1498,7 +1493,6 @@ let CommentsComponent = class CommentsComponent {
     }
     onCommentFormSubmit(values) {
         if (this.commentForm.valid) {
-            console.log(values);
             if (values.rate) {
                 //property.ratingsCount++,
                 //property.ratingsValue = property.ratingsValue + values.rate,
@@ -2066,7 +2060,6 @@ let HeaderMapComponent = class HeaderMapComponent {
         }, 1000);
     }
     onMapClick(e) {
-        console.log(e);
     }
     onMarkerClick(e, propertyId) {
         this.lat = e.latitude;
@@ -2462,7 +2455,6 @@ let PropertiesToolbarComponent = class PropertiesToolbarComponent {
     changeViewType(viewType, viewCol) {
         this.viewType = viewType;
         this.viewCol = viewCol;
-        console.log(this.viewCol);
         this.onChangeViewType.emit({ viewType: viewType, viewCol: viewCol });
     }
     sidenavToggle() {
@@ -2536,7 +2528,6 @@ let PropertyItemComponent = class PropertyItemComponent {
         this.settings = this.appSettings.settings;
     }
     ngOnInit() {
-        console.log(this.property);
         this.calculateDate();
     }
     ngAfterViewInit() {
@@ -2567,14 +2558,15 @@ let PropertyItemComponent = class PropertyItemComponent {
         }
     }
     calculateDate() {
-        const { start, end } = this.searchFields.range;
-        console.log("calcu", this.searchFields);
-        const fecha1 = start;
-        const fecha2 = end;
-        const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
-        this.stateTransaction.dayStay = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24)) + 1;
-        this.stateTransaction.priceTotalSimple = (this.property.singleRoomPrice * this.stateTransaction.dayStay) * this.searchFields.numAdults;
-        this.stateTransaction.priceTotalDuo = (this.property.doubleRoomPrice * this.stateTransaction.dayStay) * Math.ceil(this.searchFields.numAdults / 2);
+        if (this.searchFields) {
+            const { start, end } = this.searchFields.range;
+            const fecha1 = start;
+            const fecha2 = end;
+            const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
+            this.stateTransaction.dayStay = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24)) + 1;
+            this.stateTransaction.priceTotalSimple = (this.property.singleRoomPrice * this.stateTransaction.dayStay) * this.searchFields.numAdults;
+            this.stateTransaction.priceTotalDuo = (this.property.doubleRoomPrice * this.stateTransaction.dayStay) * Math.ceil(this.searchFields.numAdults / 2);
+        }
     }
     selectedProperty() {
         this.stateTransaction.numAdults = this.searchFields.numAdults;
@@ -3042,7 +3034,6 @@ let DetailReservationComponent = class DetailReservationComponent {
     }
     ngOnInit() {
         this.reserve = this.storeService.getReserve();
-        console.log("reser", this.reserve);
         if (window.innerWidth < 960) {
             this.sidenavOpen = false;
             if (this.sidenav) {
@@ -3368,12 +3359,10 @@ let FooterComponent = class FooterComponent {
     }
     onFeedbackFormSubmit(values) {
         if (this.feedbackForm.valid) {
-            console.log(values);
         }
     }
     onSubscribeFormSubmit(values) {
         if (this.subscribeForm.valid) {
-            console.log(values);
         }
     }
 };
@@ -4705,7 +4694,7 @@ module.exports = "<mat-card fxLayout=\"row\" fxLayout.xs=\"column\" fxLayoutAlig
   \******************************************************************************/
 /***/ ((module) => {
 
-module.exports = "<mat-card class=\"property-item p-0\" [ngClass]=\"[viewType + '-item', 'column-'+column]\" [class.full-width-page]=\"fullWidthPage\" fxLayout=\"row wrap\">  \r\n  \r\n    <div fxFlex=\"100\" fxShrink=\"3\" [fxFlex.gt-sm]=\"(viewType=='list') ? 40 : 100\" [fxFlex.sm]=\"(viewType=='list') ? 50 : 100\" class=\"thumbnail-section\">\r\n\r\n        <!-- <div fxLayout=\"row wrap\" class=\"property-status\">\r\n            <span *ngFor=\"let status of property.propertyStatus\" [style.background-color]=\"getStatusBgColor(status)\">{{status}}</span>\r\n        </div> -->\r\n       \r\n        <div *ngIf=\"property.gallery.length == 1\" class=\"mat-card-image w-100 m-0\">\r\n            <img [src]=\"property.gallery[0].medium\">\r\n        </div>\r\n        <div *ngIf=\"property.gallery.length > 1\" class=\"mat-card-image w-100 m-0\">\r\n            <div class=\"swiper-container\" [swiper]=\"config\">\r\n                <div class=\"swiper-wrapper\"> \r\n                    <div *ngFor=\"let image of property.gallery\" class=\"swiper-slide\">\r\n                        <img [attr.data-src]=\"image.medium\" class=\"swiper-lazy\">\r\n                        <div class=\"swiper-lazy-preloader\"></div>\r\n                    </div> \r\n                </div>  \r\n                <div class=\"swiper-pagination white\"></div>  \r\n                <button mat-icon-button class=\"swiper-button-prev swipe-arrow\"><mat-icon class=\"mat-icon-lg\">keyboard_arrow_left</mat-icon></button>\r\n                <button mat-icon-button class=\"swiper-button-next swipe-arrow\"><mat-icon class=\"mat-icon-lg\">keyboard_arrow_right</mat-icon></button>\r\n            </div>\r\n        </div>\r\n\r\n\r\n    </div>\r\n    <div fxFlex=\"100\" [fxFlex.gt-sm]=\"(viewType=='list') ? 60 : 100\" [fxFlex.sm]=\"(viewType=='list') ? 50 : 100\" class=\"p-3\">\r\n\r\n        <div fxLayout=\"column\" fxLayoutAlign=\"start stretch\" class=\"h-100\">\r\n            <mat-card-content class=\"mb-0\">\r\n                <h1 class=\"title\"><a [routerLink]=\"['/properties', property.id]\">{{property.title}}</a></h1>\r\n                <h3 fxLayout=\"row\" class=\"type\">\r\n                    <span>{{property.propertyType}}</span>\r\n                </h3>\r\n\r\n                <p fxLayout=\"row\" class=\"address\">\r\n                    <mat-icon class=\"text-muted\">location_on</mat-icon>\r\n                    <span>{{property.formattedAddress}}</span>\r\n                </p>\r\n                \r\n                <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n                    <div>\r\n                        <div>\r\n                            <h4> {{\"TEXT_INPUT.SINGLE_ROOM\" | translate}}</h4>\r\n                            <h3  class=\"primary-color price\">\r\n                                <span *ngIf=\"property.singleRoomPrice\">{{property.singleRoomPrice| currencyCOP }} / noche</span>\r\n                            </h3>\r\n                            <h4  class=\"primary-color\"*ngIf=\"stateTransaction.priceTotalSimple\">\r\n                                <span>{{stateTransaction.dayStay}} </span>\r\n                                <span>{{\"TEXT_INPUT.NIGTH_FOR\" | translate}}: </span>\r\n                                <span >{{stateTransaction.priceTotalSimple | currencyCOP }}</span>\r\n                            </h4>\r\n                        </div>\r\n                        <div>\r\n                            <h4>{{\"TEXT_INPUT.DOUBLE_ROOM\" | translate}}</h4>\r\n                            <h3  class=\"primary-color price\">\r\n                                <span *ngIf=\"property.doubleRoomPrice\">{{property.doubleRoomPrice | currencyCOP }} / noche</span>\r\n                            </h3>\r\n                            <h4  class=\"primary-color\" *ngIf=\"stateTransaction.priceTotalDuo\">\r\n                                <span>{{stateTransaction.dayStay}} </span>\r\n                                <span>{{\"TEXT_INPUT.NIGTH_FOR\" | translate}}: </span>\r\n                                <span >{{stateTransaction.priceTotalDuo | currencyCOP }}</span>\r\n                            </h4>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            </mat-card-content>\r\n            <div class=\"sticky-footer-helper\" fxFlex=\"grow\"></div>\r\n            <mat-card-actions class=\"m-0 p-0\" fxLayoutAlign=\"space-between center\"> \r\n                <p fxLayout=\"row\" class=\"date mb-0\">\r\n                    <mat-icon class=\"text-muted\">date_range</mat-icon>\r\n                    <span class=\"mx-2\">{{property.published | date:\"dd MMMM, yyyy\" }}</span>\r\n                </p>\r\n                <div>\r\n                    <a [routerLink]=\"['/properties', property.id]\" target=\"_blank\" mat-stroked-button color=\"primary\" class=\"uppercase\"\r\n                    (click)=\"selectedProperty()\"\r\n\r\n                    > {{\"TEXT_INPUT.VIEW_OFFER\" | translate}}</a>\r\n                </div> \r\n            </mat-card-actions> \r\n        </div>        \r\n        \r\n    </div> \r\n\r\n</mat-card>";
+module.exports = "<mat-card class=\"property-item p-0\" [ngClass]=\"[viewType + '-item', 'column-'+column]\" [class.full-width-page]=\"fullWidthPage\" fxLayout=\"row wrap\">  \r\n  \r\n    <div fxFlex=\"100\" fxShrink=\"3\" [fxFlex.gt-sm]=\"(viewType=='list') ? 40 : 100\" [fxFlex.sm]=\"(viewType=='list') ? 50 : 100\" class=\"thumbnail-section\">\r\n\r\n        <!-- <div fxLayout=\"row wrap\" class=\"property-status\">\r\n            <span *ngFor=\"let status of property.propertyStatus\" [style.background-color]=\"getStatusBgColor(status)\">{{status}}</span>\r\n        </div> -->\r\n       \r\n        <div *ngIf=\"property.gallery.length == 1\" class=\"mat-card-image w-100 m-0\">\r\n            <img [src]=\"property.gallery[0].medium\">\r\n        </div>\r\n        <div *ngIf=\"property.gallery.length > 1\" class=\"mat-card-image w-100 m-0\">\r\n            <div class=\"swiper-container\" [swiper]=\"config\">\r\n                <div class=\"swiper-wrapper\"> \r\n                    <div *ngFor=\"let image of property.gallery\" class=\"swiper-slide\">\r\n                        <img [attr.data-src]=\"image.medium\" class=\"swiper-lazy\">\r\n                        <div class=\"swiper-lazy-preloader\"></div>\r\n                    </div> \r\n                </div>  \r\n                <div class=\"swiper-pagination white\"></div>  \r\n                <button mat-icon-button class=\"swiper-button-prev swipe-arrow\"><mat-icon class=\"mat-icon-lg\">keyboard_arrow_left</mat-icon></button>\r\n                <button mat-icon-button class=\"swiper-button-next swipe-arrow\"><mat-icon class=\"mat-icon-lg\">keyboard_arrow_right</mat-icon></button>\r\n            </div>\r\n        </div>\r\n\r\n\r\n    </div>\r\n    <div fxFlex=\"100\" [fxFlex.gt-sm]=\"(viewType=='list') ? 60 : 100\" [fxFlex.sm]=\"(viewType=='list') ? 50 : 100\" class=\"p-3\">\r\n\r\n        <div fxLayout=\"column\" fxLayoutAlign=\"start stretch\" class=\"h-100\">\r\n            <mat-card-content class=\"mb-0\">\r\n                <h1 class=\"title\">{{property.title}}</h1>\r\n                <h3 fxLayout=\"row\" class=\"type\">\r\n                    <span>{{property.propertyType}}</span>\r\n                </h3>\r\n\r\n                <p fxLayout=\"row\" class=\"address\">\r\n                    <mat-icon class=\"text-muted\">location_on</mat-icon>\r\n                    <span>{{property.formattedAddress}}</span>\r\n                </p>\r\n                \r\n                <div fxLayout=\"row\" fxLayoutAlign=\"space-between center\">\r\n                    <div>\r\n                        <div>\r\n                            <h4> {{\"TEXT_INPUT.SINGLE_ROOM\" | translate}}</h4>\r\n                            <h3  class=\"primary-color price\">\r\n                                <span *ngIf=\"property.singleRoomPrice\">{{property.singleRoomPrice| currencyCOP }} / noche</span>\r\n                            </h3>\r\n                            <h4  class=\"primary-color\"*ngIf=\"stateTransaction.priceTotalSimple\">\r\n                                <span>{{stateTransaction.dayStay}} </span>\r\n                                <span>{{\"TEXT_INPUT.NIGTH_FOR\" | translate}}: </span>\r\n                                <span >{{stateTransaction.priceTotalSimple | currencyCOP }}</span>\r\n                            </h4>\r\n                        </div>\r\n                        <div>\r\n                            <h4>{{\"TEXT_INPUT.DOUBLE_ROOM\" | translate}}</h4>\r\n                            <h3  class=\"primary-color price\">\r\n                                <span *ngIf=\"property.doubleRoomPrice\">{{property.doubleRoomPrice | currencyCOP }} / noche</span>\r\n                            </h3>\r\n                            <h4  class=\"primary-color\" *ngIf=\"stateTransaction.priceTotalDuo\">\r\n                                <span>{{stateTransaction.dayStay}} </span>\r\n                                <span>{{\"TEXT_INPUT.NIGTH_FOR\" | translate}}: </span>\r\n                                <span >{{stateTransaction.priceTotalDuo | currencyCOP }}</span>\r\n                            </h4>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n\r\n            </mat-card-content>\r\n            <div class=\"sticky-footer-helper\" fxFlex=\"grow\"></div>\r\n            <mat-card-actions class=\"m-0 p-0\" fxLayoutAlign=\"space-between center\"> \r\n                <p fxLayout=\"row\" class=\"date mb-0\">\r\n                    <mat-icon class=\"text-muted\">date_range</mat-icon>\r\n                    <span class=\"mx-2\">{{property.published | date:\"dd MMMM, yyyy\" }}</span>\r\n                </p>\r\n                <div>\r\n                    <a [routerLink]=\"['/properties', property.id]\"  mat-button color=\"primary\" class=\"uppercase\"\r\n                    (click)=\"selectedProperty()\"\r\n\r\n                    > {{\"TEXT_INPUT.VIEW_OFFER\" | translate}}</a>\r\n                </div> \r\n            </mat-card-actions> \r\n        </div>        \r\n        \r\n    </div> \r\n\r\n</mat-card>";
 
 /***/ }),
 

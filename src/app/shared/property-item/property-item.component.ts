@@ -39,7 +39,6 @@ export class PropertyItemComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.property)
     this.calculateDate();
    }
 
@@ -76,21 +75,21 @@ export class PropertyItemComponent implements OnInit {
   }
 
   public calculateDate(){
-    const {start,end}=this.searchFields.range
-    console.log("calcu",this.searchFields)
-    const fecha1 = start;
-    const fecha2 = end;
-    
-    const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
-    this.stateTransaction.dayStay = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24))+1;
-    this.stateTransaction.priceTotalSimple= (this.property.singleRoomPrice *  this.stateTransaction.dayStay) * this.searchFields.numAdults;
-    this.stateTransaction.priceTotalDuo= (this.property.doubleRoomPrice *  this.stateTransaction.dayStay) * Math.ceil(this.searchFields.numAdults/2);
+    if(this.searchFields){
+      const {start,end}=this.searchFields.range
+      const fecha1 = start;
+      const fecha2 = end;
+      
+      const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
+      this.stateTransaction.dayStay = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24))+1;
+      this.stateTransaction.priceTotalSimple= (this.property.singleRoomPrice *  this.stateTransaction.dayStay) * this.searchFields.numAdults;
+      this.stateTransaction.priceTotalDuo= (this.property.doubleRoomPrice *  this.stateTransaction.dayStay) * Math.ceil(this.searchFields.numAdults/2);
+    }
 
   }
 
   selectedProperty(){
     this.stateTransaction.numAdults= this.searchFields.numAdults
-
     localStorage.setItem('stateTransaction',JSON.stringify(this.stateTransaction))
   }
 

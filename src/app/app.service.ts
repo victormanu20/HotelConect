@@ -288,8 +288,6 @@ export class AppService {
 
 
   public filterData(data, params: any, sort?, page?, perPage?){ 
-   
-    console.log('params',params) 
     if(params){
 
       if(params.propertyType){
@@ -366,7 +364,6 @@ export class AppService {
 
       if(params.city){
         data = data.filter(property => property.city == params.city.name)
-        console.log("data",data)
       }
       if(params.numAdults){
         data = data.filter(property => property.totalRoomsAvailable >= params.numAdults)
@@ -379,8 +376,6 @@ export class AppService {
         const diferenciaEnMilisegundos = new Date(fecha2).getTime() - new Date(fecha1).getTime();
         const diferenciaEnDias = Math.floor(diferenciaEnMilisegundos / (1000 * 60 * 60 * 24));
     
-        console.log(diferenciaEnDias);
-
         data = data.filter(property => property.availableDays>= diferenciaEnDias)
       }
 
@@ -572,7 +567,6 @@ export class AppService {
           break;
       }
     }
-    console.log("Data re",data)
     return data;
   }
 

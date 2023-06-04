@@ -136,7 +136,6 @@ let HomeComponent = class HomeComponent {
                 this.pagination.page = this.settings.loadMore.page;
             }
             let result = this.filterData(data);
-            console.log('result', result);
             if (result.data.length == 0) {
                 this.properties.length = 0;
                 this.pagination = new _app_models__WEBPACK_IMPORTED_MODULE_4__.Pagination(1, this.count, null, 2, 0, 0);
@@ -182,7 +181,6 @@ let HomeComponent = class HomeComponent {
         this.getProperties();
     }
     searchChanged(event) {
-        console.log(event);
         event.valueChanges.subscribe(() => {
             this.resetLoadMore();
             this.searchFields = event.value;
